@@ -45,3 +45,13 @@ button, input, .resultado{
     align-items: center;
     justify-content: center;
 }
+
+#resultado-item2{
+    width: 90px;
+    height: 25px;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
