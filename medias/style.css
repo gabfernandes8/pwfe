@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 16px;
+    gap: 16px;
+}
+
+.item{
+    background-color: black;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 32px;
+    gap: 16px;
+    border-radius: 12px;
+}
+
+button, input, .resultado{
+    font-size: 15px;
+    padding-inline: 14px;
+    height: 30px;
+    border-radius: 12px;
+}
+
+.resultado{
+    width: 75px;
+    height: 25px;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#resultado-item2{
+    width: 200px;
+    height: 25px;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#media-item2{
+    width: 75px;
+}
+
+#resultado3{
+    width: 300px;
+    height: 30px;
+}
+
+#resultado4{
+    width: 15vw;
+    height: 30px;
+}
+
+#numero2{
+    width: 9vw;
+}
+
+#numero3{
+    width: 17vw;
+}
