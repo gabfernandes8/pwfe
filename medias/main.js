@@ -95,4 +95,9 @@ const botaoMultiplicar = document.getElementById('multiplicar')
 
 function multiplicar(){
     const numero = parseInt(document.getElementById(numero3).value)
+    const resultado = document.getElementById('resultado5')
+
+    resultado = numero
+
+    if()
 }
