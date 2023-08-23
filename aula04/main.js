@@ -147,3 +147,66 @@ function mostrarMultiplos3ou4(){
 }
 
 botaoMostrarMultiplos3ou4.addEventListener('click', mostrarMultiplos3ou4)
+
+// ===========================================================================
+const botaoMostrarProximo = document.getElementById('botao-mostrar-proximo')
+
+function mostrarProximo (){
+    const numeros = document.getElementById('numeros').value.split(',')
+    const container = document.getElementById('container-numeros-proximos')
+
+    container.replaceChildren('')
+    const ultimoIndice = numeros.length
+
+    for (let indice=0; indice < ultimoIndice; indice++){
+        const novoSpan = document.createElement('span')
+        novoSpan.textContent = Number(numeros[indice])+1
+        container.appendChild(novoSpan)
+    }
+}
+
+botaoMostrarProximo.addEventListener('click', mostrarProximo)
+
+// ===========================================================================
+const botaoMostrarProximoPar = document.getElementById('botao-mostrar-proximo-par')
+
+function mostrarProximoPar (){
+    const numeros = document.getElementById('numeros').value.split(',')
+    const container = document.getElementById('container-proximo-par')
+
+    container.replaceChildren('')
+    const ultimoIndice = numeros.length
+
+    for (let indice=0; indice < ultimoIndice; indice++){
+        if (numeros[indice] % 2 == 0){
+            const novoSpan = document.createElement('span')
+            novoSpan.textContent = Number(numeros[indice])+2
+            container.appendChild(novoSpan)
+        } else {
+            const novoSpan = document.createElement('span')
+            novoSpan.textContent = Number(numeros[indice])+1
+            container.appendChild(novoSpan)
+        }
+    }
+}
+
+botaoMostrarProximoPar.addEventListener('click', mostrarProximoPar)
+
+// ===========================================================================
+const botaoMostrarDobro = document.getElementById('botao-mostrar-dobro')
+
+function mostrarDobro (){
+    const numeros = document.getElementById('numeros').value.split(',')
+    const container = document.getElementById('container-dobro')
+
+    container.replaceChildren('')
+    const ultimoIndice = numeros.length
+
+    for (let indice=0; indice < ultimoIndice; indice++){
+            const novoSpan = document.createElement('span')
+            novoSpan.textContent = Number(numeros[indice])*2
+            container.appendChild(novoSpan)
+    }
+}
+
+botaoMostrarDobro.addEventListener('click', mostrarDobro)
