@@ -94,10 +94,20 @@ botaoVerificar.addEventListener('click', verificar)
 const botaoMultiplicar = document.getElementById('multiplicar')
 
 function multiplicar(){
-    const numero = parseInt(document.getElementById(numero3).value)
-    const resultado = document.getElementById('resultado5')
+    const numero = parseInt(document.getElementById('numero3').value)
+    let resultado = document.getElementById('resultado5')
+    let msg
 
-    resultado = numero
+    let conta = numero * 2
 
-    if()
+    if(conta >= 30){
+        msg = conta
+    } else {
+        msg = 'tente novamente!'
+    }
+    
+    resultado.textContent = msg
 }
+
+
+botaoMultiplicar.addEventListener('click', multiplicar)
