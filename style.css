@@ -5,7 +5,6 @@
 }
 
 :root{
-    --blue: #00003d;
     --font: 'Poppins', sans-serif;
     --white: white;
     --grey: #eeeeee;
@@ -29,7 +28,8 @@ header, footer{
 
 header{
     padding-inline: 4rem;
-    background-color: var(--blue);
+    background: rgb(129,150,255);
+    background: linear-gradient(90deg, rgba(129,150,255,1) 0%, rgba(99,84,199,1) 16%, rgba(255,43,218,1) 39%, rgba(255,211,50,1) 60%, rgba(255,85,0,1) 79%, rgba(255,50,92,1) 100%);;
     color: var(--white);
 }
 
@@ -41,7 +41,7 @@ main{
     height: 80vh;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     width: 100%;
     padding: 3rem 3rem 1rem 3rem;
     gap: 32px;
@@ -59,15 +59,15 @@ main{
 }
 
 main h1{
-    color: var(--blue);
+    color: black;
     font-size: 2.5rem;
 }
 
 table th{
-    background-color: var(--grey);
+    background-color: #f2445e;
     font-weight: 600;
     font-size: 1.5rem;
-    color: var(--blue);
+    color: white;
     position: sticky;
     top: -1px;
     border: solid 0.2px var(--light-grey);
@@ -76,6 +76,18 @@ table th{
 table{
     border-collapse: collapse;
     width: 100%;
+}
+
+#um{
+    border-left: none;
+    border-top: none;
+    border-top-left-radius: 12px;
+}
+
+#dois{
+    border-right: none;
+    border-top: none;
+    border-top-right-radius: 12px;
 }
 
 tr{
