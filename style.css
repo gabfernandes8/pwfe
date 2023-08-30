@@ -98,6 +98,7 @@ tr > td{
     font-size: 1.4rem;
     padding: 24px;
     border: solid 0.2px var(--light-grey);
+    text-transform: lowercase;
 }
 
 td *{
