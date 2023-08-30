@@ -15,15 +15,18 @@ body{
 .card-container{
     display: flex;
     gap: 16px;
+    flex-direction: column;
 }
 
 .card{
-    width: 150px;
+    width: 200px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0px 2px 4px #0007;
     text-align: center;
     padding: 16px;
+    display: grid;
+    place-items: center;
 }
 
 .card img{
