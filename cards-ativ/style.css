@@ -5,30 +5,54 @@
 }
 
 body{
-    background-color: #f4f4f4;
+    background-color: lightskyblue;
     font-family: Arial, Helvetica, sans-serif;
     display: grid;
     place-content: center;
     height: 100vh;
 }
 
+.cirura{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 55px 22px 17px 22px;
+    background-image: url(./img/image-removebg-preview.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 49rem;
+    width: 24rem;
+    gap: 15px;
+}
+
 .card-container{
     display: flex;
-    gap: 16px;
+    gap: 15px;
     flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+    border-radius: 0px 0px 50px 50px;
+}
+
+.card-container::-webkit-scrollbar{
+    display: none;
 }
 
 .card{
-    width: 500px;
+    width: 100%;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0px 2px 4px #0003;
     display: grid;
-    grid-template-columns: auto 1fr max-content;
+    grid-template-columns: auto 1fr 50px;
     align-items: center;
     gap: 15px;
     padding: 15px;
-    border: 1px #000 solid;
+    position: relative;
 }
 
 .card img{
@@ -51,10 +75,23 @@ span{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 10px;
+    font-size: 12px;
+    font-weight: 600;
 }
 
 .tempo{
     place-self: center right;
     color: gray;
+    font-size: 12px;
+}
+
+.contato{
+    position: absolute;
+    background-color: #2d2c30;
+    border-radius: 12px;
+    padding: 4px 10px;
+    font-size: 0.8rem;
+    color: #fff;
+    bottom: -15%;
+    left: 70px;
 }
