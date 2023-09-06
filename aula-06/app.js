@@ -20,6 +20,8 @@ function criarTagImg(imagem){
 }
 
 async function carregarFotos(){
+    const galeria = document.getElementById('galeria')
+    galeria.replaceChildren('')
     const imagens = await pegarImagens()
     imagens.forEach(criarTagImg)
 }
