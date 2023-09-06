@@ -24,6 +24,4 @@ async function carregarFotos(){
     imagens.forEach(criarTagImg)
 }
 
-// carregarFotos()
-
 botaoPesquisar.addEventListener('click', carregarFotos)
