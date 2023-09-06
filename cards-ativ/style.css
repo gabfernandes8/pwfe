@@ -27,6 +27,10 @@ body{
     gap: 15px;
 }
 
+h2{
+    padding-top: 30px;
+}
+
 .card-container{
     display: flex;
     gap: 15px;
