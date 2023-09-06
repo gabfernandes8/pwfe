@@ -4,10 +4,75 @@
     box-sizing: border-box;
 }
 
-.galeria{
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 40px;
+    height: 4rem;
+    background: linear-gradient(90deg, rgba(64,34,48,1) 9%, rgba(66,152,143,1) 22%, rgba(177,197,146,1) 44%, rgba(241,221,186,1) 67%, rgba(251,113,138,1) 90%);;
+}
+
+h2{
+    color: white;
+}
+
+.texto{
+    height: 1.5rem;
+    width: 260px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: azure;
+    border-radius: 12px;
+    padding: 8px;
+}
+
+input{
+    font-family: 'Poppins', sans-serif;
+    height: 1.5rem;
+    width: 230px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+header img{
+    height: inherit;
+}
+
+button{
+    border: none;
+    background-color: transparent;
+}
+
+.lupa:hover{
+    cursor: pointer;
+}
+
+main{
+    display: flex;
+    align-items: center;
+}
+
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 180px);
+    grid-auto-rows: minmax(20px, auto);
     gap: 16px;
+    padding: 30px;
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.galeria > * {
+    width: 100%;
+    float: left;
+    margin: 15px;
 }
 
 .galeria img{

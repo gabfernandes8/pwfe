@@ -1,7 +1,10 @@
 'use strict'
 
+const botaoPesquisar = document.getElementById('lupa')
+
 async function pegarImagens() {
-    const url = 'https://dog.ceo/api/breed/corgi/images'
+    const pesquisa = document.getElementById('search-input').value
+    const url = 'https://dog.ceo/api/breed/' + pesquisa + '/images'
     const response = await fetch(url)
     const imagens = await response.json()
 
@@ -21,4 +24,6 @@ async function carregarFotos(){
     imagens.forEach(criarTagImg)
 }
 
-carregarFotos()
+// carregarFotos()
+
+botaoPesquisar.addEventListener('click', carregarFotos)
