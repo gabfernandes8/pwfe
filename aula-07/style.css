@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.caixinhas{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.caixinhas div *:last-child{
+    background-color: #ffe7a3;
+    height: 30px;
+    width: 260px;
+    display: flex;
+    padding-inline: 5px ;
+}
+
+input{
+    border: 0;
+    padding-inline: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+input:focus{
+    box-shadow: 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+span{
+    font-weight: 400;
+    align-items: center;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js"></script>
+    <link rel="icon" href="../favicon-gab.png">
+    <title>aula 07 - viacep</title>
+</head>
+<body>
+    <div class="caixinhas">
+        <div class="cep" id="cep">
+            <h3>CEP</h3>
+            <input type="text" id="input-cep" placeholder="Insira seu CEP" onblur="returnCep()">
+        </div>
+        <div class="end" id="end">
+            <h3>endereço</h3>
+            <span id="endereco"></span>
+        </div>
+        <div class="bairro" id="bairro">
+            <h3>bairro</h3>
+            <span id="bairro"></span>
+        </div>
+        <div class="cidade" id="cidade">
+            <h3>cidade</h3>
+            <span id="city"></span>
+        </div>
+        <div class="estado" id="estado">
+            <h3>estado</h3>
+            <span
+            id="estado"></span>
+        </div>
+    </div>
+</body>
+</html>
