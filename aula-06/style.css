@@ -80,6 +80,7 @@ main{
     height: 200px;
     cursor: pointer;
     transition: all 0.5s;
+    background-color: rgba(177,197,146,1);
 }
 
 .galeria img:hover{

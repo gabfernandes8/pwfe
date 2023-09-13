@@ -1,13 +1,18 @@
 'use strict'
 
 const botaoPesquisar = document.getElementById('lupa')
+const input = document.getElementById('search-input')
 
 async function pegarImagens() {
     const pesquisa = document.getElementById('search-input').value
-    const url = 'https://dog.ceo/api/breed/' + pesquisa + '/images'
+    let url = 'https://dog.ceo/api/breed/hound/images'
+
+    if(pesquisa != ''){
+        url = 'https://dog.ceo/api/breed/' + pesquisa + '/images'
+    }
+    
     const response = await fetch(url)
     const imagens = await response.json()
-
     return imagens.message
 }
 
@@ -27,3 +32,11 @@ async function carregarFotos(){
 }
 
 botaoPesquisar.addEventListener('click', carregarFotos)
+
+input.addEventListener('keyup', function(e){
+    if (e.key === 'Enter'){
+        carregarFotos()
+    }
+})
+
+carregarFotos()
