@@ -7,32 +7,32 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
-    <script src="./app.js"></script>
+    <script src="./app.js" defer></script>
     <link rel="icon" href="../favicon-gab.png">
     <title>aula 07 - viacep</title>
 </head>
 <body>
+    <h1>viaCep!</h1>
     <div class="caixinhas">
-        <div class="cep" id="cep">
+        <div class="cep">
             <h3>CEP</h3>
-            <input type="text" id="input-cep" placeholder="Insira seu CEP" onblur="returnCep()">
+            <input type="text" id="input" placeholder="Insira seu CEP">
         </div>
-        <div class="end" id="end">
+        <div class="end">
             <h3>endereço</h3>
             <span id="endereco"></span>
         </div>
-        <div class="bairro" id="bairro">
+        <div class="bairro">
             <h3>bairro</h3>
             <span id="bairro"></span>
         </div>
-        <div class="cidade" id="cidade">
+        <div class="cidade">
             <h3>cidade</h3>
             <span id="city"></span>
         </div>
-        <div class="estado" id="estado">
+        <div class="estado">
             <h3>estado</h3>
-            <span
-            id="estado"></span>
+            <span id="estado"></span>
         </div>
     </div>
 </body>
