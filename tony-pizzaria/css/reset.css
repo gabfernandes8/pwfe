@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, ol, li{
+    list-style: none;
+}
+
+input, input:focus{
+    box-shadow: 0 0 0 0;
+    border: none;
+    outline: 0;
+    background: transparent;
+} 
+
+input::placeholder{
+    color: white;
+    font-family: var(--font);
+    font-size: 1rem;
+    font-weight: 300;
+}
