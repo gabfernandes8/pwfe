@@ -2,4 +2,6 @@
     --laranja: #F27706;
     --gradient-laranja: linear-gradient(180deg, rgba(252, 121, 0, 0.85) 35%, rgba(252,121, 0, 0));
     --font: 'Roboto', sans-serif;
+    --vermelho-claro: #F93030;
+    --vermelho: #F01212;
 }

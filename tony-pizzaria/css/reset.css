@@ -26,3 +26,12 @@ input::placeholder{
     font-size: 1rem;
     font-weight: 300;
 }
+
+button{
+    background-color: inherit;
+    box-shadow: none;
+    border: none;
+    cursor: pointer;
+    padding-inline: 0;
+    padding-block: 0;
+}
