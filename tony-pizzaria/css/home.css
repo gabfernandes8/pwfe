@@ -182,7 +182,13 @@ main .category, .category-red {
     border-radius: 0 8px 0 8px;
 }
 
-.pizza-recomendation{
+.recomendacao{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.pizzas-recomend{
     display: flex;
     flex-wrap: nowrap;
     gap: 0.75rem;
@@ -192,24 +198,39 @@ main .category, .category-red {
     padding-right: 1.125rem;
 }
 
-.pizza-recomendation a{
+.pizza{
+    background-color: aqua;
+}
+
+.pizzas-recomend .pizza{
+    flex-shrink: 0;
+    height: 7.1875rem;
+    width: 10.9375rem;
+    border-radius: 8px;
+}
+
+.pizzas-recomend a{
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: end;
     text-align: start;
-    gap: 0.375rem;
+    gap: 0rem;
     font-weight: 700;
     font-size: 0.75rem;
     color: var(--branco);
 }
 
-.pizza-recomendation .pizza{
-    flex-shrink: 0;
-    height: 7.1875rem;
-    width: 10.9375rem;
-    border-radius: 8px;
+
+.pizzas-recomend .nome{
+    color: white;
+    font-weight: 400;
+    text-shadow: 0.0625rem 0.0625rem 0.0625rem #000;
+    background-color: transparent;
+    width: 100%;
+    padding: 1rem 0.4rem 1.2rem 0.4rem;
+    height: 3rem;
 }
 
 #pizza4{
@@ -222,4 +243,21 @@ main .category, .category-red {
     background-image: url(../img/pizza-5.webp);
     background-size: cover;
     background-position: center;
+}
+
+main .bebida{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.25rem;
+    box-shadow: 0.125rem 0.125rem 0.125rem rgba(0, 0, 0, 0.25);
+    transition: 0.8s;
+    width: 19.6875rem;
+    height: 4.3125rem;
+    background-color: var(--branco);
+}
+
+#coca{
+    height: 3.625rem;
+    width: 3.625rem;
 }
