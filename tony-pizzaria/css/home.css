@@ -1,18 +1,19 @@
 body{
     display: grid;
-    grid-template-rows: 170px 1fr auto;
+    grid-template-rows: auto 1fr auto;
     height: 100vh;
     background-image: none;
     background-color: #565960;
     font-family: var(--font);
     color: white;
-    padding: 1.5625rem 1.25rem;
+    gap: 1.5rem;
 }
 
 header{
     display: flex;
     flex-direction: column;
     gap: 1.0625rem;
+    padding: 1.5625rem 1.25rem;
 }
 
 .container-infos{
@@ -46,7 +47,7 @@ header .input{
     background-color: white;
     border-radius: 8px;
     height: 3.125rem;
-    width: 19.75rem;
+    width: 22rem;
     color: #565960;
     justify-content: space-between;
     align-items: center;
@@ -72,6 +73,7 @@ main{
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
+    padding: 0 0 0 1.25rem;
 }
 
 .categorias{
@@ -169,7 +171,7 @@ main .category, .category-red {
     width: fit-content;
     height: fit-content;
     padding: 0.25rem 0.375rem;
-    margin-left: 0.4rem;
+    t: 0.4rem;
     color: white;
 }
 
@@ -245,6 +247,18 @@ main .category, .category-red {
     background-position: center;
 }
 
+.drinks{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.container-drinks{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
 main .bebida{
     display: flex;
     align-items: center;
@@ -252,8 +266,7 @@ main .bebida{
     border-radius: 0.25rem;
     box-shadow: 0.125rem 0.125rem 0.125rem rgba(0, 0, 0, 0.25);
     transition: 0.8s;
-    width: 19.6875rem;
-    height: 4.3125rem;
+    width: calc(100vw - 2.5rem);
     background-color: white;
 }
 
@@ -262,11 +275,14 @@ main .bebida{
     width: 3.625rem;
 }
 
-.bebida{
-    border-radius: 0.5rem;
-    box-shadow: 0.125rem 0.125rem 0.125rem rgba(0, 0, 0, 0.25);
-    background-color: var(--branco);
-    width: calc(100vw - 2.5rem);
+.bebida a{
+    display: grid;
+    /* flex-direction do grid */
+    grid-auto-flow: column;
+    justify-content: space-between;
+    align-items: end;
+    width: 100%;    
+    padding: 5px 5px;
 }
 
 .drink{
@@ -275,10 +291,44 @@ main .bebida{
     gap: 0.375rem;
 }
 
+.drink-info{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 0.375rem;
+}
+
+.nome-drink{
+    font-weight: 700;
+    font-size: 0.875rem;
+}
+
 .desc-drink{
     display: flex;
     flex-direction: column;
     text-align: start;
     color: rgba(0, 0, 0, 0.50);
     gap: 0.1rem;
+}
+
+footer{
+    width: 100vw;
+    background-color: var(--laranja);
+    display: flex;
+    padding: 1rem 1.25rem;
+    align-items: center;
+    justify-content: space-around;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+footer a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.375rem;
+    color: white;
 }
