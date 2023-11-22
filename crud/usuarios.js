@@ -21,6 +21,16 @@ const cadastrarUsuario = async(usuario) => {
 
     const response = await fetch(url, options)
 
+    
+}
+
+const deletarUsuario = async(id) => {
+    const url = `http://10.107.140.2:8080/usuarios/${id}`
+    const options = {
+        method: 'DELETE'
+    }
+
+    const response = await fetch(url, options)
     console.log(response.ok)
     return response.ok
 }
@@ -30,4 +40,4 @@ const novoUsuario = {
     "email": "ryan@gmail.com"
 }
 
-cadastrarUsuario(novoUsuario)
+deletarUsuario(23)
