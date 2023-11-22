@@ -3,9 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/pizza-info.css">
+    <link rel="stylesheet" href="../css/root.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../js/pizza.js">
     <title>Pizza</title>
 </head>
 <body>
-    
+    <header id="header">
+        <button id="voltar">
+            <img src="../img/icons/Voltar.svg" alt="">
+        </button>
+    </header>
+
+    <main>
+        <section class="pizza">
+            <div class="pizza-infos">
+                <h2 class="nome-pizza" id="nome-pizza">Pizza </h2>
+                <button id="curtir">
+                    <img src="../img/icons/LikeOff.svg" alt="">
+                </button>
+            </div>
+            <span class="preco">R$ 10,00</span>
+            <p class="descricao-pizza">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <div class="estrelas" id="estrelas">
+                <img src="../img/icons/Star.svg" alt="Estrela">
+                <img src="../img/icons/Star.svg" alt="Estrela">
+                <img src="../img/icons/Star.svg" alt="Estrela">
+                <img src="../img/icons/Star.svg" alt="Estrela">
+                <img src="../img/icons/Star.svg" alt="Estrela">
+            </div>
+        </section>
+        <section class="comentarios">
+            <div class="titulo">
+                <img src="../img/icons/Chat.svg" alt="">
+                <h2>Comentários</h2>
+            </div>
+            <div class="container-comentarios" id="container-comentarios">
+            </div>
+        </section>
+    </main>
 </body>
 </html>
