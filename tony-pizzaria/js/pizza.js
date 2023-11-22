@@ -38,14 +38,15 @@ const criarImagem = () => {
     
     const header = document.getElementById('header')
     header.style.backgroundImage = `url(${imagemPizza})`
+    console.log('pinto')
 
-    document.getElementsByTagName('title')[0].innerText = nomePizza
+    // document.getElementsByTagName('title')[0].innerText = nomePizza
 
-    const nome = document.getElementById('nome-pizza')
-    const preco = document.getElementById('preco')
+    // const nome = document.getElementById('nome-pizza')
+    // const preco = document.getElementById('preco')
 
-    nome.textContent = nomePizza
-    preco.textContent = precoPizza
+    // nome.textContent = nomePizza
+    // preco.textContent = precoPizza
 
 }
 
@@ -113,8 +114,8 @@ const gerarComentarios = (comentario) => {
 
 }
 
-like.addEventListener('click', darLike)
+// like.addEventListener('click', darLike)
 window.addEventListener('load', criarImagem)
-window.addEventListener('load', comentarios.forEach(comentario => {
-    gerarComentarios(comentario)
-}))
+// window.addEventListener('load', comentarios.forEach(comentario => {
+//     gerarComentarios(comentario)
+// }))

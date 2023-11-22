@@ -151,15 +151,15 @@ main .category, .category-red {
     border-radius: 8px;
 }
 
-#pizza1{
+#pizza-1{
     background-image: url(../img/calabresa-queijo.webp);
 }
 
-#pizza2{
+#pizza-2{
     background-image: url(../img/pepperoni.webp);
 }
 
-#pizza3{
+#pizza-3{
     background-image: url(../img/pizza-3.webp);
     background-repeat: no-repeat;
     background-size: cover;
@@ -235,13 +235,13 @@ main .category, .category-red {
     height: 3rem;
 }
 
-#pizza4{
+#pizza-4{
     background-image: url(../img/pizza-4.webp);
     background-size: cover;
     background-position: center;
 }
 
-#pizza5{
+#pizza-5{
     background-image: url(../img/pizza-5.webp);
     background-size: cover;
     background-position: center;
